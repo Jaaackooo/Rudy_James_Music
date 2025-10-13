@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rudy Jame$ – Timeline</title>
+<style>
+body {
+  margin:0;
+  font-family:'Courier New', monospace;
+  background: linear-gradient(120deg,#cce7ff,#e6f2ff,#f0f8ff);
+  color:#003366;
+}
+
+/* Navigation (same as home) */
+nav {
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(8px);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-center {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color:#003366;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:16px;
+  transition:.3s;
+}
+nav a:hover { color:#ff6aff; }
+
+.social-square {
+  width: 24px;
+  height: 24px;
+  display:inline-block;
+  border-radius:4px;
+  transition: transform 0.2s;
+}
+.social-square:hover { transform: scale(1.2); }
+
+.instagram { background:#E1306C; }
+.spotify { background:#1DB954; }
+.soundcloud { background:#FF5500; }
+.tiktok { background:#69C9D0; }
+
+/* Timeline folders */
+.timeline{
+  max-width:1000px;
+  margin:50px auto 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  position:relative;
+  gap:40px;
+}
+
+.folder {
+  position: relative;
+  width: 130px;
+  height: 90px;
+  background: #ffdb66;
+  border-radius: 4px;
+  border: 2px solid #e6b800;
+  cursor: pointer;
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  padding-bottom:10px;
+  transition: transform 0.3s, filter 0.3s;
+  text-align:center;
+  text-decoration: none;
+  color: #003366;
+}
+.folder:hover {
+  transform: scale(1.1) rotate(-2deg);
+  filter: drop-shadow(0 0 20px #ffcc66);
+}
+.folder::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: -2px;
+  width: 60px;
+  height: 18px;
+  background: #ffdb66;
+  border: 2px solid #e6b800;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+.folder p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+header {
+  text-align:center;
+  padding:50px 20px 30px;
+}
+header h1{
+  font-size:3rem;
+  margin:0;
+  letter-spacing:2px;
+  color:#003366;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="project.html">Current Project</a>
+    <a href="pastprojects.html">Past Projects</a>
+    <a href="otherpersonas.html">Other Personas</a>
+  </div>
+  <div class="nav-right">
+    <a href="https://www.instagram.com/rudyjamesmusic/" target="_blank">
+      <img src="Insta.png" alt="Instagram" style="width:24px; height:24px;">
+    </a>
+    <a href="https://www.tiktok.com/@therealrudy_james" target="_blank">
+      <img src="tiktok.png" alt="TikTok" style="width:24px; height:24px;">
+    </a>
+    <a href="https://open.spotify.com/artist/1HjigXtcsBSDMUE1Ohqyan?si=B-3X-TRAS5q5BTau7pLSlA" target="_blank">
+      <img src="spotify.png" alt="Spotify" style="width:24px; height:24px;">
+    </a>
+    <a href="https://soundcloud.com/rudyjames-181339920" target="_blank">
+      <img src="soundcloud.png" alt="SoundCloud" style="width:24px; height:24px;">
+    </a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>baby blue EP</h1>
+  <p>Click a folder to explore each song</p>
+</header>
+
+<div class="timeline">
+  <a href="song1.html" class="folder"><p>Song 1</p></a>
+  <a href="song2.html" class="folder"><p>Song 2</p></a>
+  <a href="song3.html" class="folder"><p>Song 3</p></a>
+  <a href="song4.html" class="folder"><p>Song 4</p></a>
+</div>
+
+</body>
+</html>
+
+
+
+

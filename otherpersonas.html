@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rudy Jame$ – Home</title>
+<style>
+body {
+  margin:0;
+  font-family:'Courier New', monospace;
+  background: linear-gradient(120deg,#cce7ff,#e6f2ff,#f0f8ff);
+  color:#003366;
+}
+
+/* Navigation */
+nav {
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(8px);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-center {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color:#003366;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:16px;
+  transition:.3s;
+}
+nav a:hover { color:#ff6aff; }
+
+/* Social squares */
+.social-square {
+  width: 24px;
+  height: 24px;
+  display:inline-block;
+  border-radius:4px;
+  transition: transform 0.2s;
+}
+.social-square:hover { transform: scale(1.2); }
+
+.instagram { background:#E1306C; }
+.spotify { background:#1DB954; }
+.soundcloud { background:#FF5500; }
+.tiktok { background:#69C9D0; }
+
+/* Header/About section */
+header {
+  text-align:center;
+  padding:50px 20px 30px;
+}
+header h1{ 
+  font-size:3rem;
+  margin:0;
+  letter-spacing:2px;
+  color:#003366;
+}
+header p{
+  font-size:1.2rem;
+  margin-top:10px;
+  color:#3366ff;
+}
+
+.about-section {
+  max-width:800px;
+  margin:20px auto 50px;
+  text-align:center;
+}
+.about-section img {
+  width:300px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+.about-section p {
+  font-size:1.1rem;
+  color:#003366;
+  line-height:1.5;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="project.html">Current Project</a>
+    <a href="pastprojects.html">Past Projects</a>
+    <a href="otherpersonas.html">Other Personas</a>
+  </div>
+  <div class="nav-right">
+    <a href="https://www.instagram.com/rudyjamesmusic/" target="_blank">
+      <img src="Insta.png" alt="Instagram" style="width:24px; height:24px;">
+    </a>
+    <a href="https://www.tiktok.com/@therealrudy_james" target="_blank">
+      <img src="tiktok.png" alt="TikTok" style="width:24px; height:24px;">
+    </a>
+    <a href="https://open.spotify.com/artist/1HjigXtcsBSDMUE1Ohqyan?si=B-3X-TRAS5q5BTau7pLSlA" target="_blank">
+      <img src="spotify.png" alt="Spotify" style="width:24px; height:24px;">
+    </a>
+    <a href="https://soundcloud.com/rudyjames-181339920" target="_blank">
+      <img src="soundcloud.png" alt="SoundCloud" style="width:24px; height:24px;">
+    </a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>Other Personas</h1>
+</header>
+<div class="about-section">
+  <img src="nanashib.jpg" alt="Rudy Jame$">
+  <h2>Nanashi Beats</h2>
+
+  <img src="dojimapic.jpeg" alt="Rudy Jame$">
+  <h2>DOJIMA</h2>
+
+
+</div>
+
+
+</body>
+</html>
